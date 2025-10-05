@@ -20,12 +20,12 @@ Task 3: Oracle Enterprise Manager (OEM)
 
 II. NOTES ON CHALLENGES
 
-   1. OEM Login Issue
+   # OEM Login Issue
 - Attempted to log into OEM with my custom PDB user, but received *“Invalid Database Credentials.”*
 - PROBLEM:  OEM requires either SYS/SYSTEM or a Common user (C##) with DBA and monitoring privileges.
 - SOLUTION:  Created a `C##` user (C##ALVIN) at the container level with necessary privileges and used it to log in.
 
-  2. HTTP Access Issue
+  # HTTP Access Issue
 - OEM initially did not open at `https://localhost:5500/em`.
 - PROBLEM:  Oracle Enterprise Manager service was not securely started or protected .
 - SOLUTION: I changed the http and https port to 8080 and 8443 so that i can access the oem, and i accessed it but without being secured but it's fine because no one can access in that traffic. `https://localhost:8443/em`
