@@ -1,6 +1,6 @@
 # plsql_Oracle_AssignmentII
 
-I.OVERVIEW OF TASKS
+# OVERVIEW OF TASKS
 
 Task 1: Create a New Pluggable Database (PDB)
    - Created a PDB named following instuction : `am_plsql_27146`.
@@ -18,19 +18,19 @@ Task 3: Oracle Enterprise Manager (OEM)
    - Verified PDBs are visible on the OEM dashboard.
    - Captured screenshot showing created PDBs and my username.
 
-II. NOTES ON CHALLENGES
+# NOTES ON CHALLENGES
 
-   # OEM Login Issue
+   I. OEM Login Issue
 - Attempted to log into OEM with my custom PDB user, but received *“Invalid Database Credentials.”*
 - PROBLEM:  OEM requires either SYS/SYSTEM or a Common user (C##) with DBA and monitoring privileges.
 - SOLUTION:  Created a `C##` user (C##ALVIN) at the container level with necessary privileges and used it to log in.
 
-  # HTTP Access Issue
+  II. HTTP Access Issue
 - OEM initially did not open at `https://localhost:5500/em`.
 - PROBLEM:  Oracle Enterprise Manager service was not securely started or protected .
 - SOLUTION: I changed the http and https port to 8080 and 8443 so that i can access the oem, and i accessed it but without being secured but it's fine because no one can access in that traffic. `https://localhost:8443/em`
 
-  III. CONCLUSION
+  # CONCLUSION
  
 - Successfully created and deleted PDBs.
 - Configured OEM and resolved login and HTTP issues.
