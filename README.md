@@ -28,7 +28,7 @@ Task 3: Oracle Enterprise Manager (OEM)
   # HTTP Access Issue
 - OEM initially did not open at `https://localhost:5500/em`.
 - PROBLEM:  Oracle Enterprise Manager service was not securely started or protected .
-- SOLUTION: I changed the http and https port to 8080 and 8443 so that i can access the oem, and i accessed it but without being secured but it's fine because no one can access in that traffic.
+- SOLUTION: I changed the http and https port to 8080 and 8443 so that i can access the oem, and i accessed it but without being secured but it's fine because no one can access in that traffic. `https://localhost:8443/em`
 
   3. CONCLUSION
  
