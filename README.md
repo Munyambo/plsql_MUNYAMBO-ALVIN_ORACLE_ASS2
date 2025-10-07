@@ -34,7 +34,7 @@ Task 3: Oracle Enterprise Manager (OEM)
  
 - Successfully created and deleted PDBs.
 - Configured OEM and resolved login and HTTP issues.
-- OEM dashboard now shows my databases and username clearly.
+- OEM dashboard now shows my databases and username clearly (C##ALVIN).
 
 
 
